@@ -1,6 +1,6 @@
 var nameVar = 'Darshak';
-nameVar = 'Mike';
-var nameVar = 'Mehta'; 
+nameVar = 'Mike'; //reassign is allowed
+var nameVar = 'Mehta'; //redefined is allowed
 console.log('nameVar', nameVar);
 
 let nameLet = 'Let';
@@ -14,9 +14,16 @@ const nameConst = 'Frank'; //you cannot reassign
 console.log('nameConst', nameConst);
 
 
+function getPetName() {
+    var petName = 'Cat';
+    return petName;
+}
+console.log(petName); //==> error
+getPetName();
+
 //Block Scoping
 const fullName = 'Darshak Mehta';
-let firstName;
+let firstName; //therefore defined outsided
 if(fullName) {
     firstName = fullName.split(' ')[0];
     console.log(firstName);
@@ -24,4 +31,4 @@ if(fullName) {
 
 //console.log(firstName); //for const and let we cant work because its inside block
 
-console.log(firstName);
+console.log(firstName); //now this will not give error

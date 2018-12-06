@@ -9,7 +9,7 @@ console.log(add(55,1));
 
 const addArrow = (a,b) => a + b;
 
-// this keyword - no longer bound with arrow function
+// this keyword - no longer bound with arrow function (its own this), but it bounds this to its parents this
 
 const user = {
     'name':'Darshak',

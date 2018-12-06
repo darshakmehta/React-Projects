@@ -13,6 +13,18 @@ class Person {
 
 }
 
+//const me = new Person('Darshak Mehta');
+//console.log(me); 
+
+//const other = new Person();
+//console.log(other); //name = 'Anonymous' 
+
+//const me = new Person('Darshak Mehta', 26);
+//console.log(me.getDescription()); 
+
+//const other = new Person();
+//console.log(other.getDescription()); //name = 'Anonymous' age = 0
+
 class Student extends Person{
     constructor(name, age, major) {
         super(name, age);
