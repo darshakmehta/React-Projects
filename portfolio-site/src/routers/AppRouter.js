@@ -16,7 +16,7 @@ const AppRouter = () => (
             <Route path="/portfolio" component={PortfolioPage} exact={true}/>    
             <Route path="/portfolio/:id" component={PortfolioItemPage}/>    
             <Route path="/contact" component={ContactPage}/>                
-            <Route  component={NotFoundPage}/>                
+            <Route component={NotFoundPage}/>                
         </Switch>
         </div>
     </BrowserRouter>
