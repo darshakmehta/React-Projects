@@ -1,6 +1,5 @@
 /**
  * 
- * 
  * Object Destructuring
  */
 const person = {
